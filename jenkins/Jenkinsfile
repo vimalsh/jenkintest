@@ -8,9 +8,7 @@ pipeline {
         }
         stage("Build") {
             steps {
-                dir("jenkintest"){
                     sh "mvn clean install"
-                }
             }
         }
     }
